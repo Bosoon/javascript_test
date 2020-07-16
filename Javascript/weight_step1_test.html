@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight</title>
+</head>
+<body>
+    <script>
+        // var height = 180;
+        // var weight = 74;
+        // var balance = (height - 100) * 0.9;
+
+        // document.write(balance+"<br>");
+
+        var name = prompt("What is your name?","");
+        var height = prompt("How is your height?", "0");
+        var weight = prompt("How is your weight?","0");
+
+        var normal = (height - 100) * 0.9;
+        var result = weight >= normal -5 && weight <= normal + 5;
+        result = result ? "적정 체중입니다." : "적정 체중이 아닙니다";
+        document.write(name + "님은 " + result);
+    </script>
+    
+</body>
+</html>
